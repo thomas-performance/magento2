@@ -1,0 +1,15 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+$year = new \DateTime('now');
+?>
+<small class="copyright">
+    <span>
+        <?= __(
+            '%1 Copyright Thomas Performance Limited. Registered Company England & Wales 12436555. All Rights Reserved.',
+            $year->format('Y')
+        ) ?>
+    </span>
+</small>
