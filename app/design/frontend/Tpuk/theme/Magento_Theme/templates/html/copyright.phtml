@@ -5,11 +5,22 @@
  */
 $year = new \DateTime('now');
 ?>
-<small class="copyright">
-    <span>
-        <?= __(
-            '%1 Copyright Thomas Performance Limited. Registered Company England & Wales 12436555. All Rights Reserved.',
-            $year->format('Y')
-        ) ?>
-    </span>
-</small>
+<div id="copyright">
+    <div class="container">
+        <div class="copyright-text">
+            <span>
+                <?= __(
+                    '%1 Copyright Thomas Performance Limited. Registered Company England & Wales 12436555. All Rights Reserved.',
+                    $year->format('Y')
+                ) ?>
+            </span>
+        </div>
+        <div class="payment-methods">
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-cc-visa fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-cc-mastercard fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-cc-amex fa-3x" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>

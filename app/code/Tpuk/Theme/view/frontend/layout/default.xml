@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer">
+            <container name="footer.about.us.container" htmlTag="div" htmlClass="footer-block" before="-">
+                <block class="Magento\Cms\Block\Block" name="footer.about.us">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">about-us</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="footer.legal.info.container" htmlTag="div" htmlClass="footer-block" after="footer.about.us.container">
+                <block class="Magento\Cms\Block\Block" name="footer.legal.info">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">legal-information</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="footer.contact.us.container" htmlTag="div" htmlClass="footer-block" after="footer.legal.info.container">
+                <block class="Magento\Cms\Block\Block" name="footer.contact.us">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">contact-us</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="footer.social.container" htmlTag="div" htmlClass="footer-block" after="-">
+                <block name="footer.social" template="Tpuk_Theme::social.phtml" />
+            </container>
+        </referenceContainer>
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceContainer name="cms_footer_links_container" remove="true"/>
+    </body>
+</page>
