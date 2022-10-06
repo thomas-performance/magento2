@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header-wrapper">
+            <container name="user.links" htmlTag="div" htmlClass="user-links" after="-">
+                <block class="Magento\Customer\Block\Account\Link" name="my-account-link" template="Magento_Customer::account/link/my-account.phtml">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">My Account</argument>
+                        <argument name="sortOrder" xsi:type="number">10</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+    <move element="minicart" destination="user.links" after="-"/>
+</page>
