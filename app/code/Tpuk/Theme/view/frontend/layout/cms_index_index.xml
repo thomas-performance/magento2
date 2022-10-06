@@ -16,5 +16,12 @@
                 </arguments>
             </block>
         </container>
+        <container name="new.defender" htmlTag="div" htmlId="new-defender" after="featured.leds">
+            <block class="Magento\Cms\Block\Block" name="new.defender.block" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">new-defender</argument>
+                </arguments>
+            </block>
+        </container>
     </referenceContainer>
 </page>
