@@ -9,5 +9,12 @@
                 </arguments>
             </block>
         </container>
+        <container name="featured.leds" htmlTag="div" htmlId="featured-leds" after="homepage.banner">
+            <block class="Magento\Cms\Block\Block" name="featured.leds.block" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">homepage-featured-leds</argument>
+                </arguments>
+            </block>
+        </container>
     </referenceContainer>
 </page>
