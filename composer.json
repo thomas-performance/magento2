@@ -78,7 +78,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "https://mirror.mage-os.org"
+      "url": "https://mage-os.hypernode.com/mirror/"
     }
   ],
   "minimum-stability": "stable"
