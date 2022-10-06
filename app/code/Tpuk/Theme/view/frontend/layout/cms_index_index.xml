@@ -50,6 +50,14 @@
             </container>
         </container>
 
+        <container name="full.width.ctas" htmlTag="div" htmlId="ctas" before="featured.products">
+            <block class="Magento\Cms\Block\Block" name="full.width.ctas.block" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">cta-columns</argument>
+                </arguments>
+            </block>
+        </container>
+
         <container name="featured.products" htmlTag="div" htmlId="featured-products" before="footer-container">
             <block class="Magento\Cms\Block\Block" name="featured.products.block" before="-">
                 <arguments>
