@@ -23,5 +23,31 @@
                 </arguments>
             </block>
         </container>
+
+        <container name="pre.content.grid" htmlTag="div" htmlId="pre-content" after="new.defender">
+            <container name="grid.container" htmlTag="div" htmlId="tiles-container">
+                <container name="grid.left" htmlTag="div" htmlClass="tiles left" before="-">
+                    <block class="Magento\Cms\Block\Block" name="grid.left.block" before="-">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">homepage-grid-left</argument>
+                        </arguments>
+                    </block>
+                </container>
+                <container name="grid.right" htmlTag="div" htmlClass="tiles right" after="grid.left">
+                    <block class="Magento\Cms\Block\Block" name="grid.right.block" before="-">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">homepage-grid-right</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
+            <container name="post.grid.message" htmlTag="div" htmlId="post-grid" after="-">
+                <block class="Magento\Cms\Block\Block" name="post.grid.message.block" before="-">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">post-grid-message</argument>
+                    </arguments>
+                </block>
+            </container>
+        </container>
     </referenceContainer>
 </page>
