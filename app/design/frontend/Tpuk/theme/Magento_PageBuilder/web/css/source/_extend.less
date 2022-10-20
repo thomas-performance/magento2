@@ -1,10 +1,17 @@
 button,
 .pagebuilder-button-primary,
-.pagebuilder-button-secondary {
+.pagebuilder-button-secondary,
+.action.primary,
+.action.secondary {
     transform: skew(-10deg);
 
     & > span {
         transform: skew(5deg);
         display: block;
     }
+}
+
+.action.primary,
+.action.secondary {
+    padding: @button__padding__l;
 }

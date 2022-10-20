@@ -1,3 +1,11 @@
+.customer-account-login {
+    #banner {
+        img {
+            width: 100%;
+        }
+    }
+}
+
 .user-links {
     .my-account-link {
         a {
@@ -5,6 +13,17 @@
             text-transform: uppercase;
             font-size: 10px;
             color: initial;
+        }
+    }
+}
+
+& when (@media-common = true) {
+    .login-container {
+        .block {
+            .block-title {
+                &:extend(.abs-login-block-title all);
+                .lib-font-size(32);
+            }
         }
     }
 }
