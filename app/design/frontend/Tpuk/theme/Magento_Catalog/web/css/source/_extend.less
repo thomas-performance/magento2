@@ -24,3 +24,66 @@
         }
     }
 }
+
+& when (@media-common = true) {
+    .catalog-product-view {
+
+        .product.media {
+            margin-bottom: 90px;
+        }
+        .block.related {
+            margin-top: 60px;
+
+            .block-title {
+                text-align: center;
+                font-size: 50px;
+                strong {
+                    font-size: inherit;
+                    font-weight: 400;
+                }
+            }
+
+            .products.list {
+                display: flex;
+
+                .product-item {
+                    flex-basis: 20%;
+
+                    .product-item-info {
+                        width: 100%;
+                        text-align: center;
+                        padding: 0 25px;
+                        box-sizing: border-box;
+
+                        &:hover {
+                            padding: 0 25px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-tocart {
+            .fieldset {
+                display: flex;
+
+                > * {
+                    flex-basis: auto;
+                }
+
+                .field.qty {
+                    padding-right: 45px;
+                }
+
+                .actions {
+                    padding-top: 25px;
+                }
+            }
+            .action.primary.tocart {
+                margin: auto;
+                width: auto;
+            }
+        }
+    }
+}

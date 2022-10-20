@@ -1,1 +1,30 @@
 @layout__max-width: 1200px;
+
+.product.data.items {
+    background: #eee;
+    border: 1px solid #c9c9c9;
+
+    > .item.title {
+        &.active {
+            > .switch {
+                background: #fff;
+            }
+        }
+
+        > .switch {
+            border: none;
+            background: transparent;
+            font-size: 24px;
+            font-family: 'snes_italic';
+            color: black;
+            line-height: 24px;
+            padding: 20px !important;
+            height: auto;
+        }
+    }
+
+    .item.content {
+        border: none;
+        margin-top: 62px;
+    }
+}
