@@ -4,7 +4,7 @@
     <body>
         <referenceContainer name="page.wrapper">
             <container name="login.banner" htmlTag="div" htmlId="banner" after="header.container">
-                <block name="login.banner.block" template="Magento_Customer::banner.phtml" before="-"/>
+                <block name="login.banner.block" template="Magento_Theme::banner.phtml" before="-"/>
             </container>
         </referenceContainer>
     </body>

@@ -17,6 +17,7 @@
   },
   "version": "2.4.4",
   "require": {
+    "klarna/m2-klarna": "^1.1",
     "magento/composer-dependency-version-audit-plugin": "~0.1",
     "magento/composer-root-update-plugin": "~2.0",
     "magento/module-page-builder": "2.2.2",
@@ -76,10 +77,14 @@
     "magento-force": "override"
   },
   "repositories": [
-    {
-      "type": "composer",
-      "url": "https://mage-os.hypernode.com/mirror/"
-    }
+      {
+        "type": "composer",
+        "url": "https://mage-os.hypernode.com/mirror/"
+      },
+      {
+          "type": "composer",
+          "url": "https://repo.magento.com/"
+      }
   ],
   "minimum-stability": "stable"
 }

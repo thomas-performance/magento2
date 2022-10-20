@@ -5,6 +5,7 @@
         <policy id="script-src">
             <values>
                 <value id="fontawesome-script" type="host">kit.fontawesome.com</value>
+                <value id="cloudflare" type="host">static.cloudflareinsights.com</value>
             </values>
         </policy>
         <policy id="font-src">

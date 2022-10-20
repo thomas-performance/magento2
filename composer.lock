@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fb1bdee0a3f9d8adfb37950e55bfe90",
+    "content-hash": "21d4ce705553bb13847b67de592d96e0",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -143,16 +143,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.238.6",
+            "version": "3.239.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "79a76b438bd20ae687394561b4f28cb6c10db08e"
+                "reference": "47aa3e427371af4449cd9cb07af7209376a535bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/79a76b438bd20ae687394561b4f28cb6c10db08e",
-                "reference": "79a76b438bd20ae687394561b4f28cb6c10db08e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/47aa3e427371af4449cd9cb07af7209376a535bb",
+                "reference": "47aa3e427371af4449cd9cb07af7209376a535bb",
                 "shasum": ""
             },
             "require": {
@@ -231,9 +231,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.238.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.239.1"
             },
-            "time": "2022-10-17T18:17:10+00:00"
+            "time": "2022-10-19T18:15:49+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2105,6 +2105,663 @@
             "time": "2022-04-13T08:02:27+00:00"
         },
         {
+            "name": "klarna/m2-klarna",
+            "version": "1.1.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/m2-klarna/klarna-m2-klarna-1.1.5.0.zip",
+                "shasum": "137f9e9cb42b841d7b8145e9b58c5ce9d9fd355c"
+            },
+            "require": {
+                "klarna/module-backend": "^9.1.10",
+                "klarna/module-base": "^9.1.10",
+                "klarna/module-kco": "^10.1.10",
+                "klarna/module-keb": "^1.0.5",
+                "klarna/module-kss": "^1.0.10",
+                "klarna/module-logger": "^1.0.8",
+                "klarna/module-orderlines": "^1.0.10",
+                "klarna/module-osm": "^2.1.4",
+                "klarna/module-payments": "^8.1.10",
+                "klarna/module-payments-graph-ql": "^1.0.10",
+                "klarna/module-support": "^1.0.10"
+            },
+            "replace": {
+                "klarna/m2-checkout": "*"
+            },
+            "type": "metapackage",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Klarna for Magento >= 2.4.4"
+        },
+        {
+            "name": "klarna/module-backend",
+            "version": "9.1.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-backend/klarna-module-backend-9.1.10.0.zip",
+                "shasum": "270ba9698598dee8c50f14b36384d8e4911c51d0"
+            },
+            "require": {
+                "klarna/module-base": "^9.1.10",
+                "klarna/module-logger": "^1.0.8",
+                "magento/framework": "^103",
+                "magento/module-payment": "^100.1|^100.4",
+                "magento/module-quote": "^101.0|^101.2",
+                "magento/module-sales": "^102.0|^103.0",
+                "magento/module-store": "^101.0|^101.1",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Backend\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Backend Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-base",
+            "version": "9.1.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-base/klarna-module-base-9.1.10.0.zip",
+                "shasum": "e410d1bde3ea7d4a7d6038b778a878514dfe7230"
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.3.0",
+                "klarna/module-logger": "^1.0.8",
+                "magento/framework": "^103",
+                "magento/module-bundle": "^100.1|^101.0",
+                "magento/module-catalog": "^103.0|^104.0",
+                "magento/module-config": "^101.0|^101.2",
+                "magento/module-customer": "^102.0|^103.0",
+                "magento/module-directory": "^100.1|^100.4",
+                "magento/module-payment": "^100.1|^100.4",
+                "magento/module-paypal": "^100.3|^101.0",
+                "magento/module-quote": "^101.0|^101.2",
+                "magento/module-sales": "^102.0|^103.0",
+                "magento/module-store": "^101.0|^101.1",
+                "magento/module-tax": "^100.1|^100.4",
+                "php": "~7.4.0||~8.1.0",
+                "psr/log": "^1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Base\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Base Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-kco",
+            "version": "10.1.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-kco/klarna-module-kco-10.1.10.0.zip",
+                "shasum": "42f1efc5b1f5b0a210eb2a1c3bfa6364e323c38a"
+            },
+            "require": {
+                "ext-json": "*",
+                "klarna/module-base": "^9.1.10",
+                "klarna/module-kss": "^1.0.10",
+                "klarna/module-logger": "^1.0.8",
+                "klarna/module-orderlines": "^1.0.10",
+                "magento/framework": "^103",
+                "monolog/monolog": "^2.3",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Kco\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian Jung",
+                    "email": "christian.jung@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Checkout Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-keb",
+            "version": "1.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-keb/klarna-module-keb-1.0.5.0.zip",
+                "shasum": "e4b8ff10d749ae100fe6c63af22b500ab87d868e"
+            },
+            "require": {
+                "klarna/module-base": "^9.1.10",
+                "magento/framework": "^103",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Keb\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Express Button Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-kss",
+            "version": "1.0.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-kss/klarna-module-kss-1.0.10.0.zip",
+                "shasum": "d43547c0bea09f262f30c34c18d5f856344eea95"
+            },
+            "require": {
+                "klarna/module-base": "^9.1.10",
+                "klarna/module-orderlines": "^1.0.10",
+                "magento/framework": "^103",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Kss\\": ""
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Shipping Service Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-logger",
+            "version": "1.0.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-logger/klarna-module-logger-1.0.8.0.zip",
+                "shasum": "ee901467064ff5492f350279d49a0ed8706de722"
+            },
+            "require": {
+                "ext-json": "*",
+                "magento/framework": "^103",
+                "monolog/monolog": "^2.3",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Logger\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian Jung",
+                    "email": "christian.jung@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna logging module"
+        },
+        {
+            "name": "klarna/module-orderlines",
+            "version": "1.0.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-orderlines/klarna-module-orderlines-1.0.10.0.zip",
+                "shasum": "4e7b886966b232242a435099350d7bc7db765abb"
+            },
+            "require": {
+                "klarna/module-base": "^9.1.10",
+                "magento/framework": "^103",
+                "magento/module-payment": "^100.1|^100.4",
+                "magento/module-quote": "^101.0|^101.2",
+                "magento/module-sales": "^102.0|^103.0",
+                "magento/module-store": "^101.0|^101.1",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Orderlines\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian Jung",
+                    "email": "christian.jung@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Orderlines Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-osm",
+            "version": "2.1.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-osm/klarna-module-osm-2.1.4.0.zip",
+                "shasum": "d5137aec90bf37a8c5871877d1c98642eee2355f"
+            },
+            "require": {
+                "magento/framework": "^103",
+                "magento/module-catalog": "^103.0|^104.0",
+                "magento/module-checkout": "^100.1",
+                "magento/module-store": "^101.0",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Onsitemessaging\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna OnSite Messaging Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-payments",
+            "version": "8.1.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-payments/klarna-module-payments-8.1.10.0.zip",
+                "shasum": "0fbf883d7af4793f8daa2e529ccd6dc7905903c7"
+            },
+            "require": {
+                "klarna/module-base": "^9.1.10",
+                "klarna/module-logger": "^1.0.8",
+                "magento/framework": "^103",
+                "magento/module-backend": "^101.0|^102.0",
+                "magento/module-checkout": "^100.1",
+                "magento/module-config": "^101.0",
+                "magento/module-customer": "^102.0|^103.0",
+                "magento/module-directory": "100.4.*",
+                "magento/module-payment": "^100.1",
+                "magento/module-quote": "^101.0",
+                "magento/module-sales": "^102.0||^103.0",
+                "magento/module-sales-rule": "^101.0",
+                "magento/module-store": "^101.0",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "suggest": {
+                "magento/module-advanced-sales-rule": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Kp\\": ""
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian Jung",
+                    "email": "christian.jung@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Payments Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-payments-graph-ql",
+            "version": "1.0.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-payments-graph-ql/klarna-module-payments-graph-ql-1.0.10.0.zip",
+                "shasum": "3950dac501019499ff701b8343cd29bf5503510f"
+            },
+            "require": {
+                "klarna/module-base": "^9.1.10",
+                "klarna/module-payments": "^8.1.10",
+                "magento/framework": "^103",
+                "magento/module-quote-graph-ql": "^100",
+                "magento/module-store": "^101.0",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Klarna\\KpGraphQl\\": ""
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian Jung",
+                    "email": "christian.jung@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna KpGraphQl Magento 2 Extension"
+        },
+        {
+            "name": "klarna/module-support",
+            "version": "1.0.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/klarna/module-support/klarna-module-support-1.0.10.0.zip",
+                "shasum": "4f7f137fd6ef561c53ffb562b2b77b79e1746de8"
+            },
+            "require": {
+                "klarna/module-base": "^9.1.10",
+                "magento/framework": "^103",
+                "php": "~7.4.0||~8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "Klarna\\Support\\": "."
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Christian Jung",
+                    "email": "christian.jung@klarna.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Klarna Support Magento 2 Extension"
+        },
+        {
             "name": "laminas/laminas-captcha",
             "version": "2.13.0",
             "source": {
@@ -2977,29 +3634,29 @@
         },
         {
             "name": "laminas/laminas-mime",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-mime.git",
-                "reference": "62a899a7c9100889c2d2386b1357003a2cb52fa9"
+                "reference": "60ec04b755821c79c1987ce291b44e69f2c0831f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-mime/zipball/62a899a7c9100889c2d2386b1357003a2cb52fa9",
-                "reference": "62a899a7c9100889c2d2386b1357003a2cb52fa9",
+                "url": "https://api.github.com/repos/laminas/laminas-mime/zipball/60ec04b755821c79c1987ce291b44e69f2c0831f",
+                "reference": "60ec04b755821c79c1987ce291b44e69f2c0831f",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-stdlib": "^2.7 || ^3.0",
-                "php": "^7.3 || ~8.0.0 || ~8.1.0"
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0"
             },
             "conflict": {
                 "zendframework/zend-mime": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.2.1",
-                "laminas/laminas-mail": "^2.12",
-                "phpunit/phpunit": "^9.5"
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-mail": "^2.19.0",
+                "phpunit/phpunit": "~9.5.25"
             },
             "suggest": {
                 "laminas/laminas-mail": "Laminas\\Mail component"
@@ -3034,7 +3691,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-30T09:38:41+00:00"
+            "time": "2022-10-18T08:38:15+00:00"
         },
         {
             "name": "laminas/laminas-modulemanager",
@@ -3110,16 +3767,16 @@
         },
         {
             "name": "laminas/laminas-mvc",
-            "version": "3.3.5",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-mvc.git",
-                "reference": "43fa8b0a02376cfe3209a91140bc97e94cd62d6e"
+                "reference": "4ccca214621659fe75b748b377d5ba6a313a878b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-mvc/zipball/43fa8b0a02376cfe3209a91140bc97e94cd62d6e",
-                "reference": "43fa8b0a02376cfe3209a91140bc97e94cd62d6e",
+                "url": "https://api.github.com/repos/laminas/laminas-mvc/zipball/4ccca214621659fe75b748b377d5ba6a313a878b",
+                "reference": "4ccca214621659fe75b748b377d5ba6a313a878b",
                 "shasum": ""
             },
             "require": {
@@ -3131,19 +3788,20 @@
                 "laminas/laminas-servicemanager": "^3.7",
                 "laminas/laminas-stdlib": "^3.6",
                 "laminas/laminas-view": "^2.14",
-                "php": "^7.3 || ~8.0.0 || ~8.1.0"
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0"
             },
             "conflict": {
                 "zendframework/zend-mvc": "*"
             },
             "require-dev": {
                 "http-interop/http-middleware": "^0.4.1",
-                "laminas/laminas-coding-standard": "^1.0.0",
+                "laminas/laminas-coding-standard": "^2.4.0",
                 "laminas/laminas-json": "^3.3",
-                "laminas/laminas-psr7bridge": "^1.0",
+                "laminas/laminas-psr7bridge": "^1.8",
                 "laminas/laminas-stratigility": ">=2.0.1 <2.2",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.5.5"
+                "phpspec/prophecy": "^1.15.0",
+                "phpspec/prophecy-phpunit": "^2.0.1",
+                "phpunit/phpunit": "^9.5.25"
             },
             "suggest": {
                 "laminas/laminas-json": "(^2.6.1 || ^3.0) To auto-deserialize JSON body content in AbstractRestfulController extensions, when json_decode is unavailable",
@@ -3188,7 +3846,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-09-20T12:37:51+00:00"
+            "time": "2022-10-19T15:52:09+00:00"
         },
         {
             "name": "laminas/laminas-recaptcha",
@@ -4304,16 +4962,10 @@
         {
             "name": "magento/composer",
             "version": "1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/magento/composer.git",
-                "reference": "244c03cf437f6ae6de1650421f30e8a4fa70a02c"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magento/composer/zipball/244c03cf437f6ae6de1650421f30e8a4fa70a02c",
-                "reference": "244c03cf437f6ae6de1650421f30e8a4fa70a02c",
-                "shasum": ""
+                "url": "https://repo.magento.com/archives/magento/composer/magento-composer-1.8.0.0.zip",
+                "shasum": "01795e091ebbfa0e9c05afc3f5b328a41ca319e9"
             },
             "require": {
                 "composer/composer": "^1.9 || ^2.0",
@@ -4329,17 +4981,11 @@
                     "Magento\\Composer\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0",
                 "AFL-3.0"
             ],
-            "description": "Magento composer library helps to instantiate Composer application and run composer commands.",
-            "support": {
-                "issues": "https://github.com/magento/composer/issues",
-                "source": "https://github.com/magento/composer/tree/1.8.0"
-            },
-            "time": "2022-01-14T01:29:51+00:00"
+            "description": "Magento composer library helps to instantiate Composer application and run composer commands."
         },
         {
             "name": "magento/composer-dependency-version-audit-plugin",
@@ -23370,16 +24016,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "7d1e81213b0c7eb8d5a9f524456cbc2778ed5c65"
+                "reference": "5f13698464773fa6f5392a9e311f81e23e9c3ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/7d1e81213b0c7eb8d5a9f524456cbc2778ed5c65",
-                "reference": "7d1e81213b0c7eb8d5a9f524456cbc2778ed5c65",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/5f13698464773fa6f5392a9e311f81e23e9c3ba7",
+                "reference": "5f13698464773fa6f5392a9e311f81e23e9c3ba7",
                 "shasum": ""
             },
             "require": {
@@ -23409,9 +24055,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.11.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.12.0"
             },
-            "time": "2022-10-14T13:32:28+00:00"
+            "time": "2022-10-20T07:49:58+00:00"
         },
         {
             "name": "phpstan/phpstan",
