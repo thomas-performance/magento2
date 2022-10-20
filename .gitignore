@@ -11,3 +11,4 @@ app/etc/*
 !.gitignore
 !composer.json
 !composer.lock
+!auth.json
