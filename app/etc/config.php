@@ -325,6 +325,11 @@ return [
         'Magento_Wishlist' => 1,
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
+        'Netresearch_ShippingCore' => 1,
+        'Dhl_UnifiedTracking' => 1,
+        'Netresearch_ConfigFields' => 1,
+        'Dhl_ShippingCore' => 1,
+        'Dhl_Paket' => 1,
         'Klarna_Base' => 1,
         'Klarna_Backend' => 1,
         'Klarna_Kco' => 1,
@@ -340,8 +345,16 @@ return [
         'Magezon_Builder' => 1,
         'Magezon_NinjaMenus' => 1,
         'Magezon_UiBuilder' => 1,
+        'Netresearch_AdminNotificationFeed' => 1,
+        'Dhl_PaketReturns' => 1,
+        'Netresearch_InteractiveBatchProcessing' => 1,
+        'DeutschePost_Internetmarke' => 1,
+        'Netresearch_ShippingUi' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
+        'PostDirekt_Addressfactory' => 1,
+        'PostDirekt_Autocomplete' => 1,
+        'PostDirekt_Core' => 1,
         'Temando_ShippingRemover' => 1,
         'Tpuk_Theme' => 1
     ],
@@ -355,6 +368,13 @@ return [
             'catalog' => [
                 'frontend' => [
                     'list_mode' => 'grid'
+                ]
+            ],
+            'carriers' => [
+                'dhl' => [
+                    'active' => '1',
+                    'id' => '0:3:AyUOJaYti6Ru+ozJ6TcZB4gJ+XN5l2/LV3vAPoFJqTvJR4u/Pkv19cSWQIV+YRqUn+Ixjz8snb7GYM7y',
+                    'password' => '0:3:+M7WYcACUaw3X/f6gTZtvwgDuaXGBCef5zxj7rykwLgh5FStaoNl7pYe2kGrVQ8HrcWz/rmZuctK8Myd'
                 ]
             ]
         ]
