@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="mgz_ninjamenus_menu" resource="default" engine="innodb" comment="Mgz Ninjamenus Menu Table">
+        <column xsi:type="int" name="menu_id" unsigned="false" nullable="false" identity="true" comment="Menu ID" />
+        <column xsi:type="varchar" name="name" nullable="false" length="255" comment="Menu Name" />
+        <column xsi:type="varchar" name="identifier" nullable="false" length="100" comment="Menu Identifier" />
+        <column xsi:type="varchar" name="type" nullable="false" length="100" comment="Menu Type" />
+        <column xsi:type="varchar" name="mobile_type" nullable="false" length="100" comment="Menu Mobile Type" />
+        <column xsi:type="longtext" name="profile" nullable="true" comment="Short Code" />
+        <column xsi:type="smallint" name="is_active" unsigned="false" nullable="false" identity="false" default="1" comment="Is Menu Active" />
+        <column xsi:type="smallint" name="sticky" unsigned="false" nullable="false" identity="false" default="0" comment="Is Menu Sticky" />
+        <column xsi:type="varchar" name="mobile_breakpoint" nullable="false" length="100" comment="Menu Mobile Breakpoint" />
+        <column xsi:type="smallint" name="hamburger" unsigned="false" nullable="false" identity="false" default="0" comment="Enable Hamburger" />
+        <column xsi:type="varchar" name="hamburger_title" nullable="false" length="255" comment="Hamburger Title" />
+        <column xsi:type="varchar" name="css_classes" nullable="false" length="255" comment="CSS Classes" />
+        <column xsi:type="longtext" name="custom_css" nullable="true" comment="Custom CSS" />
+        <column xsi:type="varchar" name="main_color" nullable="false" length="255" comment="Main Color" />
+        <column xsi:type="varchar" name="main_background_color" nullable="false" length="255" comment="Main Background Color" />
+        <column xsi:type="varchar" name="secondary_color" nullable="false" length="255" comment="Secondary Color" />
+        <column xsi:type="varchar" name="secondary_background_color" nullable="false" length="255" comment="Secondary Background Color" />
+        <column xsi:type="timestamp" name="creation_time" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="Menu Creation Time" />
+        <column xsi:type="timestamp" name="update_time" on_update="true" nullable="false" default="CURRENT_TIMESTAMP" comment="Menu Modification Time" />
+        <column xsi:type="varchar" name="main_font_size" nullable="false" length="255" comment="Main Font Size" />
+        <column xsi:type="varchar" name="main_font_weight" nullable="false" length="255" comment="Main Font Weight" />
+        <column xsi:type="varchar" name="main_hover_color" nullable="false" length="255" comment="Main Hover Color" />
+        <column xsi:type="varchar" name="main_hover_background_color" nullable="false" length="255" comment="Main Hover Background Color" />
+        <column xsi:type="varchar" name="secondary_hover_color" nullable="false" length="255" comment="Secondary Hover Color" />
+        <column xsi:type="varchar" name="secondary_hover_background_color" nullable="false" length="255" comment="Secondary Hover Background Color" />
+        <column xsi:type="smallint" name="overlay" unsigned="false" nullable="false" identity="false" default="0" comment="Overlay" />
+        <column xsi:type="varchar" name="overlay_opacity" nullable="false" length="255" comment="Overlay Opacity" />
+        <column xsi:type="varchar" name="hover_delay_timeout" nullable="false" length="255" comment="Hover Delay Timeout" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="menu_id" />
+        </constraint>
+        <index referenceId="MGZ_NINJAMENUS_MENU_IDENTIFIER" indexType="btree">
+            <column name="identifier" />
+        </index>
+        <index referenceId="MGZ_NINJAMENUS_MENU_NAME_IDENTIFIER" indexType="fulltext">
+            <column name="name" />
+            <column name="identifier" />
+        </index>
+    </table>
+    <table name="mgz_ninjamenus_menu_store" resource="default" engine="innodb" comment="Mgz Ninjamenus Menu Store Table">
+        <column xsi:type="int" name="menu_id" unsigned="false" nullable="false" identity="false" />
+        <column xsi:type="smallint" name="store_id" unsigned="true" nullable="false" identity="false" comment="Store ID" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="menu_id" />
+            <column name="store_id" />
+        </constraint>
+        <constraint xsi:type="foreign" referenceId="MGZ_NINJAMENUS_MENU_STORE_MENU_ID_MGZ_NINJAMENUS_MENU_MENU_ID" table="mgz_ninjamenus_menu_store" column="menu_id" referenceTable="mgz_ninjamenus_menu" referenceColumn="menu_id" onDelete="CASCADE" />
+        <constraint xsi:type="foreign" referenceId="MGZ_NINJAMENUS_MENU_STORE_STORE_ID_STORE_STORE_ID" table="mgz_ninjamenus_menu_store" column="store_id" referenceTable="store" referenceColumn="store_id" onDelete="CASCADE" />
+        <index referenceId="MGZ_NINJAMENUS_MENU_STORE_STORE_ID" indexType="btree">
+            <column name="store_id" />
+        </index>
+    </table>
+</schema>
