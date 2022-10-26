@@ -3,8 +3,8 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="page.top">
-            <container name="pdp.banner" htmlTag="div" htmlId="banner" after="navigation.sections">
-                <block name="pdp.banner.block" template="Magento_Theme::banner.phtml" before="-"/>
+            <container name="plp.banner" htmlTag="div" htmlId="banner" after="navigation.sections">
+                <block name="plp.banner.block" template="Magento_Theme::banner.phtml" before="-"/>
             </container>
         </referenceContainer>
     </body>

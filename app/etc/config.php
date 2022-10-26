@@ -347,6 +347,11 @@ return [
                 'theme' => [
                     'theme_id' => 'frontend/Tpuk/theme'
                 ]
+            ],
+            'catalog' => [
+                'frontend' => [
+                    'list_mode' => 'grid'
+                ]
             ]
         ]
     ]
