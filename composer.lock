@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21d4ce705553bb13847b67de592d96e0",
+    "content-hash": "282a472aef77b2f478f9efeb33992a3e",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -234,6 +234,79 @@
                 "source": "https://github.com/aws/aws-sdk-php/tree/3.239.1"
             },
             "time": "2022-10-19T18:15:49+00:00"
+        },
+        {
+            "name": "azuyalabs/yasumi",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/azuyalabs/yasumi.git",
+                "reference": "5fd99815e8bf480fd0e6b76527d5413767e98930"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/azuyalabs/yasumi/zipball/5fd99815e8bf480fd0e6b76527d5413767e98930",
+                "reference": "5fd99815e8bf480fd0e6b76527d5413767e98930",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "v2.19 | v3.5",
+                "infection/infection": "^0.17 | ^0.26",
+                "mikey179/vfsstream": "^1.6",
+                "phan/phan": "^5.2",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.5 | ^9.5",
+                "vimeo/psalm": "^4.9"
+            },
+            "suggest": {
+                "ext-calendar": "For calculating the date of Easter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yasumi\\": "src/Yasumi/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sacha Telgenhof",
+                    "email": "me@sachatelgenhof.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "The easy PHP Library for calculating holidays.",
+            "homepage": "https://www.yasumi.dev",
+            "keywords": [
+                "Bank",
+                "calculation",
+                "calendar",
+                "celebration",
+                "date",
+                "holiday",
+                "holidays",
+                "national",
+                "time"
+            ],
+            "support": {
+                "docs": "https://www.yasumi.dev",
+                "issues": "https://github.com/azuyalabs/yasumi/issues",
+                "source": "https://github.com/azuyalabs/yasumi"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/sachatelgenhof",
+                    "type": "other"
+                }
+            ],
+            "time": "2022-01-30T07:43:17+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -572,6 +645,72 @@
                 "source": "https://github.com/ChristianRiesen/base32/tree/1.6.0"
             },
             "time": "2021-02-26T10:19:33+00:00"
+        },
+        {
+            "name": "clue/stream-filter",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clue/stream-filter.git",
+                "reference": "d6169430c7731d8509da7aecd0af756a5747b78e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clue/stream-filter/zipball/d6169430c7731d8509da7aecd0af756a5747b78e",
+                "reference": "d6169430c7731d8509da7aecd0af756a5747b78e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "Clue\\StreamFilter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering"
+                }
+            ],
+            "description": "A simple and modern approach to stream filtering in PHP",
+            "homepage": "https://github.com/clue/php-stream-filter",
+            "keywords": [
+                "bucket brigade",
+                "callback",
+                "filter",
+                "php_user_filter",
+                "stream",
+                "stream_filter_append",
+                "stream_filter_register"
+            ],
+            "support": {
+                "issues": "https://github.com/clue/stream-filter/issues",
+                "source": "https://github.com/clue/stream-filter/tree/v1.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-21T13:15:14+00:00"
         },
         {
             "name": "colinmollenhour/cache-backend-file",
@@ -1326,6 +1465,1136 @@
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.3"
             },
             "time": "2020-10-02T16:03:48+00:00"
+        },
+        {
+            "name": "deutschepost/module-addressfactory-m2",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-module-addressfactory-m2.git",
+                "reference": "16bab8bfe79dc7b0e7c31c2b0d3bd41702927317"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-module-addressfactory-m2/zipball/16bab8bfe79dc7b0e7c31c2b0d3bd41702927317",
+                "reference": "16bab8bfe79dc7b0e7c31c2b0d3bd41702927317",
+                "shasum": ""
+            },
+            "require": {
+                "deutschepost/module-core": "^1.2.0",
+                "deutschepost/sdk-api-addressfactory": "^2.0.0",
+                "ext-intl": "*",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-cron": "^100.3.0",
+                "magento/module-sales": "^102.0.0 || ^103.0.0",
+                "magento/module-store": "^101.0.0",
+                "magento/module-ui": "^101.1.0",
+                "netresearch/config-fields-m2": "^1.3.0",
+                "php": "^7.2.0 || ^8.1.0",
+                "php-http/curl-client": "^2.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "PostDirekt\\Addressfactory\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Deutsche Post Direkt Addressfactory for Magento2",
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-module-addressfactory-m2/issues",
+                "source": "https://github.com/netresearch/deutschepost-module-addressfactory-m2/tree/1.4.0"
+            },
+            "time": "2022-08-23T09:16:41+00:00"
+        },
+        {
+            "name": "deutschepost/module-autocomplete-m2",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-module-autocomplete-m2.git",
+                "reference": "9f5430b621b81451c5a0126bd9b84f1ce1210b86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-module-autocomplete-m2/zipball/9f5430b621b81451c5a0126bd9b84f1ce1210b86",
+                "reference": "9f5430b621b81451c5a0126bd9b84f1ce1210b86",
+                "shasum": ""
+            },
+            "require": {
+                "deutschepost/module-core": "^1.2.0",
+                "deutschepost/sdk-api-autocomplete-authentication": "^1.1.0",
+                "ext-intl": "*",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-csp": "^100.3.0",
+                "magento/module-store": "^101.0.0",
+                "netresearch/config-fields-m2": "^1.3.0",
+                "nyholm/psr7": "^1.0",
+                "php": "^7.2.0 || ^8.1.0",
+                "php-http/curl-client": "^2.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "PostDirekt\\Autocomplete\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Deutsche Post Direkt Autocomplete Integration for Magento2",
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-module-autocomplete-m2/issues",
+                "source": "https://github.com/netresearch/deutschepost-module-autocomplete-m2/tree/1.4.0"
+            },
+            "time": "2022-08-22T11:12:37+00:00"
+        },
+        {
+            "name": "deutschepost/module-core",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-module-core.git",
+                "reference": "3d68ad22a229b9584d18d35fdc62b837f431488e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-module-core/zipball/3d68ad22a229b9584d18d35fdc62b837f431488e",
+                "reference": "3d68ad22a229b9584d18d35fdc62b837f431488e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-customer": "^102.0.0 || ^103.0.0",
+                "magento/module-store": "^101.0.0",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "PostDirekt\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Deutsche Post Direkt Core Integration for Magento2",
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-module-core/issues",
+                "source": "https://github.com/netresearch/deutschepost-module-core/tree/1.2.0"
+            },
+            "time": "2022-04-26T08:44:36+00:00"
+        },
+        {
+            "name": "deutschepost/module-internetmarke",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-module-internetmarke.git",
+                "reference": "4a6ead5b0b8f5ebb320c7a361cfe563aca4147aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-module-internetmarke/zipball/4a6ead5b0b8f5ebb320c7a361cfe563aca4147aa",
+                "reference": "4a6ead5b0b8f5ebb320c7a361cfe563aca4147aa",
+                "shasum": ""
+            },
+            "require": {
+                "deutschepost/sdk-api-oneclickforapp": "^1.1.0",
+                "deutschepost/sdk-api-oneclickforrefund": "^1.1.0",
+                "deutschepost/sdk-api-prodws": "^1.1.0",
+                "dhl/module-carrier-paket": "^2.6.0",
+                "dhl/module-shipping-core": "^2.2.0",
+                "dhl/module-unified-tracking": "^2.1.0",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-cron": "^100.3.0",
+                "magento/module-sales": "^102.0.0 || ^103.0.0",
+                "magento/module-shipping": "^100.3.0",
+                "magento/module-store": "^101.0.0",
+                "netresearch/config-fields-m2": "^1.3.0",
+                "netresearch/module-shipping-core": "^2.8.0",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "DeutschePost\\Internetmarke\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "INTERNETMARKE shipping product capabilities for the DHL Paket carrier module",
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-module-internetmarke/issues",
+                "source": "https://github.com/netresearch/deutschepost-module-internetmarke/tree/2.3.1"
+            },
+            "time": "2022-10-07T11:26:35+00:00"
+        },
+        {
+            "name": "deutschepost/sdk-api-addressfactory",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-sdk-addressfactory.git",
+                "reference": "613107e05559b7d95e158a6ddf368ae9da22635f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-sdk-addressfactory/zipball/613107e05559b7d95e158a6ddf368ae9da22635f",
+                "reference": "613107e05559b7d95e158a6ddf368ae9da22635f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "php": "^7.1.3 | ^8.0",
+                "psr/log": "^1.1.0"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "phpstan/phpstan": "^0.12.2",
+                "phpunit/phpunit": "^7.5.0 | ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PostDirekt\\Sdk\\AddressfactoryDirect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "PostDirekt Addressfactory API",
+            "keywords": [
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-sdk-addressfactory/issues",
+                "source": "https://github.com/netresearch/deutschepost-sdk-addressfactory/tree/2.0.0"
+            },
+            "time": "2021-09-08T22:52:58+00:00"
+        },
+        {
+            "name": "deutschepost/sdk-api-autocomplete-authentication",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-sdk-autocomplete-authentication.git",
+                "reference": "cdcf9280080efcc586e7402dc1c05cae5d83092d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-sdk-autocomplete-authentication/zipball/cdcf9280080efcc586e7402dc1c05cae5d83092d",
+                "reference": "cdcf9280080efcc586e7402dc1c05cae5d83092d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.1.3 | ^8.0",
+                "php-http/discovery": "^1.0.0",
+                "php-http/httplug": "^2.0.0",
+                "php-http/logger-plugin": "^1.0.0",
+                "psr/http-client": "^1.0.0",
+                "psr/http-client-implementation": "^1.0.0",
+                "psr/http-factory": "^1.0.0",
+                "psr/http-factory-implementation": "^1.0.0",
+                "psr/http-message": "^1.0.0",
+                "psr/http-message-implementation": "^1.0.0",
+                "psr/log": "^1.1.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0.0",
+                "php-http/mock-client": "dev-upgrade-version-2",
+                "phpstan/phpstan": "^0.12.2",
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-PDTWO-110": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PostDirekt\\Sdk\\Autocomplete\\Authentication\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Deutsche Post Direkt Addressfactory Autocomplete Authentication SDK",
+            "keywords": [
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-sdk-autocomplete-authentication/issues",
+                "source": "https://github.com/netresearch/deutschepost-sdk-autocomplete-authentication/tree/1.1.0"
+            },
+            "time": "2021-09-08T07:04:37+00:00"
+        },
+        {
+            "name": "deutschepost/sdk-api-oneclickforapp",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-sdk-api-oneclickforapp.git",
+                "reference": "f318753a7045746c07b730e4a773b2a694257388"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-sdk-api-oneclickforapp/zipball/f318753a7045746c07b730e4a773b2a694257388",
+                "reference": "f318753a7045746c07b730e4a773b2a694257388",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "php": "^7.2.0 || ^8.0.0",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "suggest": {
+                "zf1s/zend-pdf": "^1.13"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeutschePost\\Sdk\\OneClickForApp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Deutsche Post INTERNETMARKE 1C4A API SDK",
+            "keywords": [
+                "1c4a",
+                "dp",
+                "internetmarke",
+                "php",
+                "sdk",
+                "soap"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-sdk-api-oneclickforapp/issues",
+                "source": "https://github.com/netresearch/deutschepost-sdk-api-oneclickforapp/tree/1.1.0"
+            },
+            "time": "2022-04-28T13:44:27+00:00"
+        },
+        {
+            "name": "deutschepost/sdk-api-oneclickforrefund",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-sdk-api-oneclickforrefund.git",
+                "reference": "0027f52726a57d11e91cda3da84a1576a861bb0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-sdk-api-oneclickforrefund/zipball/0027f52726a57d11e91cda3da84a1576a861bb0b",
+                "reference": "0027f52726a57d11e91cda3da84a1576a861bb0b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "php": "^7.2.0 || ^8.0.0",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeutschePost\\Sdk\\OneClickForRefund\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Deutsche Post INTERNETMARKE 1C4R API SDK",
+            "keywords": [
+                "1c4r",
+                "dp",
+                "internetmarke",
+                "php",
+                "sdk",
+                "soap"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-sdk-api-oneclickforrefund/issues",
+                "source": "https://github.com/netresearch/deutschepost-sdk-api-oneclickforrefund/tree/1.1.0"
+            },
+            "time": "2022-04-28T13:57:39+00:00"
+        },
+        {
+            "name": "deutschepost/sdk-api-prodws",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/deutschepost-sdk-api-prodws.git",
+                "reference": "5292dfe5492ef5021904b8bc6a3615937a7e7f1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/deutschepost-sdk-api-prodws/zipball/5292dfe5492ef5021904b8bc6a3615937a7e7f1b",
+                "reference": "5292dfe5492ef5021904b8bc6a3615937a7e7f1b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-soap": "*",
+                "php": "^7.2.0 || ^8.0.0",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeutschePost\\Sdk\\ProdWS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Deutsche Post DHL Group Shipping Products API SDK",
+            "keywords": [
+                "dhl",
+                "dpdhl",
+                "internetmarke",
+                "php",
+                "prodws",
+                "sdk",
+                "soap"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/deutschepost-sdk-api-prodws/issues",
+                "source": "https://github.com/netresearch/deutschepost-sdk-api-prodws/tree/1.1.0"
+            },
+            "time": "2022-04-28T13:13:26+00:00"
+        },
+        {
+            "name": "dhl/module-carrier-paket",
+            "version": "2.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-module-carrier-paket.git",
+                "reference": "37c23fc07381a3440c9aa3e0efbddd258ccebd61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-module-carrier-paket/zipball/37c23fc07381a3440c9aa3e0efbddd258ccebd61",
+                "reference": "37c23fc07381a3440c9aa3e0efbddd258ccebd61",
+                "shasum": ""
+            },
+            "require": {
+                "dhl/module-shipping-core": "^2.2.0",
+                "dhl/module-unified-tracking": "^2.1.0",
+                "dhl/sdk-api-bcs": "^1.3.0",
+                "dhl/sdk-api-parcel-management": "^3.1.0",
+                "dhl/sdk-api-unified-location-finder": "^2.1.0",
+                "ext-json": "*",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-bundle": "^100.3.0 || ^101.0.0",
+                "magento/module-catalog": "^103.0.0 || ^104.0.0",
+                "magento/module-catalog-inventory": "^100.3.0",
+                "magento/module-checkout": "^100.3.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-configurable-product": "^100.3.0",
+                "magento/module-directory": "^100.3.0",
+                "magento/module-quote": "^101.1.0",
+                "magento/module-sales": "^102.0.0 || ^103.0.0",
+                "magento/module-shipping": "^100.3.0",
+                "magento/module-store": "^101.0.0",
+                "magento/zendframework1": "^1.14.0",
+                "monolog/monolog": "^1.17 || ^2.3",
+                "netresearch/config-fields-m2": "^1.3.0",
+                "netresearch/module-shipping-core": "^2.8.2",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "require-dev": {
+                "magento/module-customer": "^102.0.0 || ^103.0.0 ",
+                "magento/module-offline-payments": "^100.3.0",
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0",
+                "tddwizard/magento2-fixtures": "^0.12.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Dhl\\Paket\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Carrier implementation for DHL Business Customer Shipping",
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-module-carrier-paket/issues",
+                "source": "https://github.com/netresearch/dhl-module-carrier-paket/tree/2.6.2"
+            },
+            "time": "2022-09-06T16:49:15+00:00"
+        },
+        {
+            "name": "dhl/module-carrier-paket-returns",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-module-carrier-paket-returns.git",
+                "reference": "45bc2a3467016bcbeebef722a923f434914feab5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-module-carrier-paket-returns/zipball/45bc2a3467016bcbeebef722a923f434914feab5",
+                "reference": "45bc2a3467016bcbeebef722a923f434914feab5",
+                "shasum": ""
+            },
+            "require": {
+                "dhl/module-shipping-core": "^2.2.0",
+                "dhl/sdk-api-bcs-returns": "^2.1.1",
+                "ext-json": "*",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-catalog-inventory": "^100.3.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-directory": "^100.3.0",
+                "magento/module-media-storage": "^100.3.0",
+                "magento/module-quote": "^101.1.0",
+                "magento/module-sales": "^102.0.0 || ^103.0.0",
+                "magento/module-shipping": "^100.3.0",
+                "magento/module-store": "^101.0.0",
+                "netresearch/config-fields-m2": "^1.3.0",
+                "netresearch/module-shipping-core": "^2.8.0",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0"
+            },
+            "suggest": {
+                "magento/module-rma": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Dhl\\PaketReturns\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Carrier implementation for DHL Business Customer Shipping Returns",
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-module-carrier-paket-returns/issues",
+                "source": "https://github.com/netresearch/dhl-module-carrier-paket-returns/tree/2.2.1"
+            },
+            "time": "2022-05-24T12:11:31+00:00"
+        },
+        {
+            "name": "dhl/module-shipping-core",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-module-shipping-core.git",
+                "reference": "a52db421cfb2479eda3229a26ab2da7d6f861cdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-module-shipping-core/zipball/a52db421cfb2479eda3229a26ab2da7d6f861cdf",
+                "reference": "a52db421cfb2479eda3229a26ab2da7d6f861cdf",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-catalog": "^103.0.0 || ^104.0.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-eav": "^102.0.0",
+                "magento/module-quote": "^101.1.0",
+                "magento/module-shipping": "^100.3.0",
+                "magento/module-store": "^101.0.0",
+                "magento/module-ui": "^101.1.5",
+                "magento/zendframework1": "^1.14.1",
+                "netresearch/config-fields-m2": "^1.3.0",
+                "netresearch/module-shipping-core": "^2.8.0",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0",
+                "tddwizard/magento2-fixtures": "^0.12.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Dhl\\ShippingCore\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "DHL component providing utilities and frameworks for advanced shipping features",
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-module-shipping-core/issues",
+                "source": "https://github.com/netresearch/dhl-module-shipping-core/tree/2.2.0"
+            },
+            "time": "2022-04-29T08:54:01+00:00"
+        },
+        {
+            "name": "dhl/module-unified-tracking",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-module-unified-tracking.git",
+                "reference": "c255a9f0d83f82327a241841e48b303417947af9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-module-unified-tracking/zipball/c255a9f0d83f82327a241841e48b303417947af9",
+                "reference": "c255a9f0d83f82327a241841e48b303417947af9",
+                "shasum": ""
+            },
+            "require": {
+                "dhl/sdk-api-unified-tracking": "^2.2.0",
+                "ext-intl": "*",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-sales": "^102.0.0 || ^103.0.0",
+                "magento/module-shipping": "^100.3.0",
+                "magento/module-store": "^101.0.0",
+                "netresearch/module-shipping-core": "^2.8.0",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0",
+                "tddwizard/magento2-fixtures": "^0.12.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Dhl\\UnifiedTracking\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Integrate the DPDHL Group tracking web service into Magento® 2 carrier modules.",
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-module-unified-tracking/issues",
+                "source": "https://github.com/netresearch/dhl-module-unified-tracking/tree/2.1.0"
+            },
+            "time": "2022-04-29T10:01:35+00:00"
+        },
+        {
+            "name": "dhl/sdk-api-bcs",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-sdk-api-bcs.git",
+                "reference": "705cd6385a9640a2313fb0cc40faa8547e2319af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-sdk-api-bcs/zipball/705cd6385a9640a2313fb0cc40faa8547e2319af",
+                "reference": "705cd6385a9640a2313fb0cc40faa8547e2319af",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "php": "^7.2.0 || ^8.0.0",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "ext-simplexml": "*",
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhl\\Sdk\\Paket\\Bcs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "DHL business customer shipping API",
+            "keywords": [
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-sdk-api-bcs/issues",
+                "source": "https://github.com/netresearch/dhl-sdk-api-bcs/tree/1.3.0"
+            },
+            "time": "2022-04-28T12:07:55+00:00"
+        },
+        {
+            "name": "dhl/sdk-api-bcs-returns",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-sdk-api-bcs-returns.git",
+                "reference": "583589a84318d5cba5c9cecb0816e2a3c98c0fac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-sdk-api-bcs-returns/zipball/583589a84318d5cba5c9cecb0816e2a3c98c0fac",
+                "reference": "583589a84318d5cba5c9cecb0816e2a3c98c0fac",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2.0 || ^8.0.0",
+                "php-http/discovery": "^1.10.0",
+                "php-http/httplug": "^2.2.0",
+                "php-http/logger-plugin": "^1.2.1",
+                "psr/http-client": "^1.0.1",
+                "psr/http-client-implementation": "^1.0.0",
+                "psr/http-factory": "^1.0.0",
+                "psr/http-factory-implementation": "^1.0.0",
+                "psr/http-message": "^1.0.0",
+                "psr/http-message-implementation": "^1.0.0",
+                "psr/log": "^1.1.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0.0",
+                "php-http/mock-client": "^1.5.0",
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhl\\Sdk\\Paket\\Retoure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "DHL Paket Retoure API SDK",
+            "homepage": "https://entwickler.dhl.de/group/ep/wsapis/retouren",
+            "keywords": [
+                "dhl",
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-sdk-api-bcs-returns/issues",
+                "source": "https://github.com/netresearch/dhl-sdk-api-bcs-returns/tree/2.1.1"
+            },
+            "time": "2022-05-24T12:06:32+00:00"
+        },
+        {
+            "name": "dhl/sdk-api-parcel-management",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-sdk-api-parcel-management.git",
+                "reference": "f716d3a5b0124b248c0df0dbec05c5cb769cc6c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-sdk-api-parcel-management/zipball/f716d3a5b0124b248c0df0dbec05c5cb769cc6c3",
+                "reference": "f716d3a5b0124b248c0df0dbec05c5cb769cc6c3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "netresearch/jsonmapper": "^4.0.0",
+                "php": "^7.2.0 || ^8.0.0",
+                "php-http/discovery": "^1.10.0",
+                "php-http/httplug": "^2.2.0",
+                "php-http/logger-plugin": "^1.2.1",
+                "psr/http-client": "^1.0.1",
+                "psr/http-client-implementation": "^1.0.0",
+                "psr/http-factory": "^1.0.0",
+                "psr/http-factory-implementation": "^1.0.0",
+                "psr/http-message": "^1.0.0",
+                "psr/http-message-implementation": "^1.0.0",
+                "psr/log": "^1.1.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0.0",
+                "php-http/mock-client": "^1.5",
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhl\\Sdk\\Paket\\ParcelManagement\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "DHL Paket Parcel Management API SDK",
+            "homepage": "https://entwickler.dhl.de/en/group/ep/wsapis/paketsteuerung-",
+            "keywords": [
+                "dhl",
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-sdk-api-parcel-management/issues",
+                "source": "https://github.com/netresearch/dhl-sdk-api-parcel-management/tree/3.1.0"
+            },
+            "time": "2022-04-28T12:48:09+00:00"
+        },
+        {
+            "name": "dhl/sdk-api-unified-location-finder",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-sdk-api-unified-location-finder.git",
+                "reference": "7efd39a86f0eb1c099fe09325d54144b325344c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-sdk-api-unified-location-finder/zipball/7efd39a86f0eb1c099fe09325d54144b325344c5",
+                "reference": "7efd39a86f0eb1c099fe09325d54144b325344c5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "netresearch/jsonmapper": "^4.0.0",
+                "php": "^7.2.0 || ^8.0.0",
+                "php-http/discovery": "^1.10.0",
+                "php-http/httplug": "^2.2.0",
+                "php-http/logger-plugin": "^1.2.1",
+                "psr/http-client": "^1.0.1",
+                "psr/http-client-implementation": "^1.0.0",
+                "psr/http-factory": "^1.0.0",
+                "psr/http-factory-implementation": "^1.0.0",
+                "psr/http-message": "^1.0.0",
+                "psr/http-message-implementation": "^1.0.0",
+                "psr/log": "^1.1.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0.0",
+                "php-http/mock-client": "^1.5.0",
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhl\\Sdk\\UnifiedLocationFinder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "DPDHL Group Unified Location Finder API SDK",
+            "homepage": "https://developer.dhl.com/api-reference/location-finder",
+            "keywords": [
+                "dhl",
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-sdk-api-unified-location-finder/issues",
+                "source": "https://github.com/netresearch/dhl-sdk-api-unified-location-finder/tree/2.1.0"
+            },
+            "time": "2022-04-28T12:25:36+00:00"
+        },
+        {
+            "name": "dhl/sdk-api-unified-tracking",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/dhl-sdk-api-unified-tracking.git",
+                "reference": "ab17164e6a6971607c94702915aafe52e0ee853e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/dhl-sdk-api-unified-tracking/zipball/ab17164e6a6971607c94702915aafe52e0ee853e",
+                "reference": "ab17164e6a6971607c94702915aafe52e0ee853e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "netresearch/jsonmapper": "^4.0.0",
+                "php": "^7.2.0 || ^8.0.0",
+                "php-http/discovery": "^1.10.0",
+                "php-http/httplug": "^2.2.0",
+                "php-http/logger-plugin": "^1.2.1",
+                "psr/http-client": "^1.0.1",
+                "psr/http-client-implementation": "^1.0.0",
+                "psr/http-factory": "^1.0.0",
+                "psr/http-factory-implementation": "^1.0.0",
+                "psr/http-message": "^1.0.0",
+                "psr/http-message-implementation": "^1.0.0",
+                "psr/log": "^1.1.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0.0",
+                "php-http/mock-client": "^1.5.0",
+                "phpstan/phpstan": "^1.5.0",
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0",
+                "squizlabs/php_codesniffer": "^3.4",
+                "symfony/finder": "^3.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhl\\Sdk\\UnifiedTracking\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "DPDHL Group unified shipment tracking API SDK",
+            "keywords": [
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/netresearch/dhl-sdk-api-unified-tracking/issues",
+                "source": "https://github.com/netresearch/dhl-sdk-api-unified-tracking/tree/2.2.0"
+            },
+            "time": "2022-04-28T13:06:10+00:00"
+        },
+        {
+            "name": "dhl/shipping-m2",
+            "version": "2.7.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/dhl/shipping-m2/dhl-shipping-m2-2.7.1.0.zip",
+                "shasum": "971b83c7062256cdf8c1026dcd487b89a5775559"
+            },
+            "require": {
+                "deutschepost/module-addressfactory-m2": "~1.4.0",
+                "deutschepost/module-autocomplete-m2": "~1.4.0",
+                "deutschepost/module-internetmarke": "~2.3.0",
+                "dhl/module-carrier-paket": "~2.6.2",
+                "dhl/module-carrier-paket-returns": "~2.2.1",
+                "netresearch/module-admin-notification-feed": "~1.0.0",
+                "netresearch/module-interactive-batch-processing": "~1.1.0",
+                "netresearch/module-shipping-ui": "~2.3.2"
+            },
+            "type": "metapackage",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "DHL multi-division shipping extension for Magento 2"
         },
         {
             "name": "elasticsearch/elasticsearch",
@@ -17494,6 +18763,347 @@
             "time": "2021-06-14T00:11:39+00:00"
         },
         {
+            "name": "netresearch/config-fields-m2",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/config-fields-m2.git",
+                "reference": "2bc63c0ad26601c760e6c86bcf149154cdc56574"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/config-fields-m2/zipball/2bc63c0ad26601c760e6c86bcf149154cdc56574",
+                "reference": "2bc63c0ad26601c760e6c86bcf149154cdc56574",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-config": "^101.1.0",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Netresearch\\ConfigFields\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Max Melzer",
+                    "email": "max.melzer@netresearch.de"
+                }
+            ],
+            "description": "A collection of custom config types for Magento 2 system configuration development.",
+            "support": {
+                "issues": "https://github.com/netresearch/config-fields-m2/issues",
+                "source": "https://github.com/netresearch/config-fields-m2/tree/1.3.0"
+            },
+            "time": "2022-04-26T09:54:55+00:00"
+        },
+        {
+            "name": "netresearch/jsonmapper",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweiske/jsonmapper.git",
+                "reference": "8bbc021a8edb2e4a7ea2f8ad4fa9ec9dce2fcb8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/8bbc021a8edb2e4a7ea2f8ad4fa9ec9dce2fcb8d",
+                "reference": "8bbc021a8edb2e4a7ea2f8ad4fa9ec9dce2fcb8d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-reflection": "*",
+                "ext-spl": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.5 || ~8.0 || ~9.0",
+                "squizlabs/php_codesniffer": "~3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonMapper": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Weiske",
+                    "email": "cweiske@cweiske.de",
+                    "homepage": "http://github.com/cweiske/jsonmapper/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Map nested JSON structures onto PHP classes",
+            "support": {
+                "email": "cweiske@cweiske.de",
+                "issues": "https://github.com/cweiske/jsonmapper/issues",
+                "source": "https://github.com/cweiske/jsonmapper/tree/v4.0.0"
+            },
+            "time": "2020-12-01T19:48:11+00:00"
+        },
+        {
+            "name": "netresearch/module-admin-notification-feed",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/module-admin-notification-feed.git",
+                "reference": "0a1260cbcfa3bc50c3fd18ce5ec005316d594599"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/module-admin-notification-feed/zipball/0a1260cbcfa3bc50c3fd18ce5ec005316d594599",
+                "reference": "0a1260cbcfa3bc50c3fd18ce5ec005316d594599",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-feed": "^2.9.0",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-cron": "^100.3.0",
+                "magento/module-ui": "^101.1.5",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Netresearch\\AdminNotificationFeed\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Admin Notification Feed",
+            "support": {
+                "issues": "https://github.com/netresearch/module-admin-notification-feed/issues",
+                "source": "https://github.com/netresearch/module-admin-notification-feed/tree/1.0.0"
+            },
+            "time": "2022-05-17T11:36:25+00:00"
+        },
+        {
+            "name": "netresearch/module-interactive-batch-processing",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/module-interactive-batch-processing.git",
+                "reference": "bff0777f4e115bc4c0e34e524d73c9fdec35bea0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/module-interactive-batch-processing/zipball/bff0777f4e115bc4c0e34e524d73c9fdec35bea0",
+                "reference": "bff0777f4e115bc4c0e34e524d73c9fdec35bea0",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-sales": "^102.0.0 || ^103.0.0",
+                "magento/module-store": "^101.0.0",
+                "magento/module-ui": "^101.1.0",
+                "netresearch/module-shipping-core": "^2.8.0",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Netresearch\\InteractiveBatchProcessing\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Optional component extending the bulk shipment mass action by an additional step that allows to select shipping product and packaging per order.",
+            "support": {
+                "issues": "https://github.com/netresearch/module-interactive-batch-processing/issues",
+                "source": "https://github.com/netresearch/module-interactive-batch-processing/tree/1.1.0"
+            },
+            "time": "2022-04-29T09:49:48+00:00"
+        },
+        {
+            "name": "netresearch/module-shipping-core",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/module-shipping-core.git",
+                "reference": "fa27f5e3008162e0907ab73d47d84d0e0dcbed6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/module-shipping-core/zipball/fa27f5e3008162e0907ab73d47d84d0e0dcbed6a",
+                "reference": "fa27f5e3008162e0907ab73d47d84d0e0dcbed6a",
+                "shasum": ""
+            },
+            "require": {
+                "azuyalabs/yasumi": "^2.0.0",
+                "ext-dom": "*",
+                "ext-simplexml": "*",
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.0 || ^102.0.0",
+                "magento/module-bundle": "^100.3.0 || ^101.0.0",
+                "magento/module-catalog": "^103.0.0 || ^104.0.0",
+                "magento/module-config": "^101.1.0",
+                "magento/module-configurable-product": "^100.3.0",
+                "magento/module-cron": "^100.3.0",
+                "magento/module-directory": "^100.3.0",
+                "magento/module-eav": "^102.0.0",
+                "magento/module-email": "^101.0.0",
+                "magento/module-payment": "^100.3.3",
+                "magento/module-quote": "^101.1.0",
+                "magento/module-sales": "^102.0.0 || ^103.0.0",
+                "magento/module-shipping": "^100.3.0",
+                "magento/module-store": "^101.0.0",
+                "magento/module-tax": "^100.3.0",
+                "magento/module-ui": "^101.1.0",
+                "magento/module-webapi": "^100.3.0",
+                "netresearch/config-fields-m2": "^1.3.0",
+                "nyholm/psr7": "^1.2.0",
+                "php": "^7.2.0 || ^8.1.0",
+                "php-http/curl-client": "^2.1.0"
+            },
+            "require-dev": {
+                "magento/module-checkout": "^100.3.0",
+                "magento/module-customer": "^102.0.0 || ^103.0.0",
+                "phpunit/phpunit": "^6.5.0 || ^9.0.0",
+                "symfony/yaml": "^3.3.0 || ^4.0.0",
+                "tddwizard/magento2-fixtures": "^1.1.0"
+            },
+            "suggest": {
+                "magento/module-rma": "^101.1.0",
+                "magento/module-scalable-checkout": "^100.2.0",
+                "magento/module-scalable-oms": "^100.2.0",
+                "netresearch/module-shipping-inventory": "^1.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Netresearch\\ShippingCore\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Netresearch component providing utilities and frameworks for advanced shipping features",
+            "support": {
+                "issues": "https://github.com/netresearch/module-shipping-core/issues",
+                "source": "https://github.com/netresearch/module-shipping-core/tree/2.8.2"
+            },
+            "time": "2022-08-23T12:05:05+00:00"
+        },
+        {
+            "name": "netresearch/module-shipping-ui",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/module-shipping-ui.git",
+                "reference": "2fde100fc620d0e5564feabb9e0e72711222d92a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/module-shipping-ui/zipball/2fde100fc620d0e5564feabb9e0e72711222d92a",
+                "reference": "2fde100fc620d0e5564feabb9e0e72711222d92a",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "^102.0.0 || ^103.0.0",
+                "magento/module-backend": "^101.0.5 || ^102.0.0",
+                "magento/module-bundle": "^100.3.0 || ^101.0.0",
+                "magento/module-catalog": "^103.0.0 || ^104.0.0",
+                "magento/module-checkout": "^100.3.5",
+                "magento/module-csp": "^100.3.0",
+                "magento/module-customer": "^102.0.5 || ^103.0.0",
+                "magento/module-directory": "^100.3.0",
+                "magento/module-sales": "^102.0.5 || ^103.0.0",
+                "magento/module-shipping": "^100.3.5",
+                "magento/module-store": "^101.0.5",
+                "magento/module-tax": "^100.3.5",
+                "magento/module-theme": "^101.0.0",
+                "magento/module-ui": "^101.1.5",
+                "netresearch/module-shipping-core": "^2.8.1",
+                "php": "^7.2.0 || ^8.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Netresearch\\ShippingUi\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "email": "plugins@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Manufacturer"
+                }
+            ],
+            "description": "Module providing the UI integration for the Netresearch shipping components",
+            "support": {
+                "issues": "https://github.com/netresearch/module-shipping-ui/issues",
+                "source": "https://github.com/netresearch/module-shipping-ui/tree/2.3.2"
+            },
+            "time": "2022-08-25T09:15:08+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.15.1",
             "source": {
@@ -17548,6 +19158,83 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.1"
             },
             "time": "2022-09-04T07:30:47+00:00"
+        },
+        {
+            "name": "nyholm/psr7",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7.git",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/f734364e38a876a23be4d906a2a089e1315be18a",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-http/message-factory": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "http-interop/http-factory-tests": "^0.9",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
+                "symfony/error-handler": "^4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "A fast PHP7 implementation of PSR-7",
+            "homepage": "https://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7/issues",
+                "source": "https://github.com/Nyholm/psr7/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-06-22T07:13:36+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -17921,6 +19608,523 @@
                 "source": "https://github.com/php-amqplib/php-amqplib/tree/v3.1.2"
             },
             "time": "2022-01-18T17:08:01+00:00"
+        },
+        {
+            "name": "php-http/client-common",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/client-common.git",
+                "reference": "45db684cd4e186dcdc2b9c06b22970fe123796c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/client-common/zipball/45db684cd4e186dcdc2b9c06b22970fe123796c0",
+                "reference": "45db684cd4e186dcdc2b9c06b22970fe123796c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "php-http/httplug": "^2.0",
+                "php-http/message": "^1.6",
+                "php-http/message-factory": "^1.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "symfony/options-resolver": "~4.0.15 || ~4.1.9 || ^4.2.1 || ^5.0 || ^6.0",
+                "symfony/polyfill-php80": "^1.17"
+            },
+            "require-dev": {
+                "doctrine/instantiator": "^1.1",
+                "guzzlehttp/psr7": "^1.4",
+                "nyholm/psr7": "^1.2",
+                "phpspec/phpspec": "^5.1 || ^6.3 || ^7.1",
+                "phpspec/prophecy": "^1.10.2",
+                "phpunit/phpunit": "^7.5.15 || ^8.5 || ^9.3"
+            },
+            "suggest": {
+                "ext-json": "To detect JSON responses with the ContentTypePlugin",
+                "ext-libxml": "To detect XML responses with the ContentTypePlugin",
+                "php-http/cache-plugin": "PSR-6 Cache plugin",
+                "php-http/logger-plugin": "PSR-3 Logger plugin",
+                "php-http/stopwatch-plugin": "Symfony Stopwatch plugin"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Client\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Common HTTP Client implementations and tools for HTTPlug",
+            "homepage": "http://httplug.io",
+            "keywords": [
+                "client",
+                "common",
+                "http",
+                "httplug"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/client-common/issues",
+                "source": "https://github.com/php-http/client-common/tree/2.6.0"
+            },
+            "time": "2022-09-29T09:59:43+00:00"
+        },
+        {
+            "name": "php-http/curl-client",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/curl-client.git",
+                "reference": "2ed4245a817d859dd0c1d51c7078cdb343cf5233"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/curl-client/zipball/2ed4245a817d859dd0c1d51c7078cdb343cf5233",
+                "reference": "2ed4245a817d859dd0c1d51c7078cdb343cf5233",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": "^7.1 || ^8.0",
+                "php-http/discovery": "^1.6",
+                "php-http/httplug": "^2.0",
+                "php-http/message": "^1.2",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "symfony/options-resolver": "^3.4 || ^4.0 || ^5.0 || ^6.0"
+            },
+            "provide": {
+                "php-http/async-client-implementation": "1.0",
+                "php-http/client-implementation": "1.0",
+                "psr/http-client-implementation": "1.0"
+            },
+            "require-dev": {
+                "guzzlehttp/psr7": "^1.0",
+                "laminas/laminas-diactoros": "^2.0",
+                "php-http/client-integration-tests": "^3.0",
+                "phpunit/phpunit": "^7.5 || ^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Client\\Curl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Михаил Красильников",
+                    "email": "m.krasilnikov@yandex.ru"
+                }
+            ],
+            "description": "PSR-18 and HTTPlug Async client with cURL",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "curl",
+                "http",
+                "psr-18"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/curl-client/issues",
+                "source": "https://github.com/php-http/curl-client/tree/2.2.1"
+            },
+            "time": "2021-12-10T18:02:07+00:00"
+        },
+        {
+            "name": "php-http/discovery",
+            "version": "1.14.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/discovery.git",
+                "reference": "31d8ee46d0215108df16a8527c7438e96a4d7735"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/31d8ee46d0215108df16a8527c7438e96a4d7735",
+                "reference": "31d8ee46d0215108df16a8527c7438e96a4d7735",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "nyholm/psr7": "<1.0"
+            },
+            "require-dev": {
+                "graham-campbell/phpspec-skip-example-extension": "^5.0",
+                "php-http/httplug": "^1.0 || ^2.0",
+                "php-http/message-factory": "^1.0",
+                "phpspec/phpspec": "^5.1 || ^6.1"
+            },
+            "suggest": {
+                "php-http/message": "Allow to use Guzzle, Diactoros or Slim Framework factories"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Discovery\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Finds installed HTTPlug implementations and PSR-7 message factories",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "adapter",
+                "client",
+                "discovery",
+                "factory",
+                "http",
+                "message",
+                "psr7"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/discovery/issues",
+                "source": "https://github.com/php-http/discovery/tree/1.14.3"
+            },
+            "time": "2022-07-11T14:04:40+00:00"
+        },
+        {
+            "name": "php-http/httplug",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/httplug.git",
+                "reference": "f640739f80dfa1152533976e3c112477f69274eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/httplug/zipball/f640739f80dfa1152533976e3c112477f69274eb",
+                "reference": "f640739f80dfa1152533976e3c112477f69274eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "php-http/promise": "^1.1",
+                "psr/http-client": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "friends-of-phpspec/phpspec-code-coverage": "^4.1",
+                "phpspec/phpspec": "^5.1 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric GELOEN",
+                    "email": "geloen.eric@gmail.com"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
+                }
+            ],
+            "description": "HTTPlug, the HTTP client abstraction for PHP",
+            "homepage": "http://httplug.io",
+            "keywords": [
+                "client",
+                "http"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/httplug/issues",
+                "source": "https://github.com/php-http/httplug/tree/2.3.0"
+            },
+            "time": "2022-02-21T09:52:22+00:00"
+        },
+        {
+            "name": "php-http/logger-plugin",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/logger-plugin.git",
+                "reference": "985bd29f52f6381ee0407edc86fc36472df33629"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/logger-plugin/zipball/985bd29f52f6381ee0407edc86fc36472df33629",
+                "reference": "985bd29f52f6381ee0407edc86fc36472df33629",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "php-http/client-common": "^1.9 || ^2.0",
+                "php-http/message": "^1.0",
+                "psr/log": "^1.0 || ^2 || ^3",
+                "symfony/polyfill-php73": "^1.17"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^5.1 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Client\\Common\\Plugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "PSR-3 Logger plugin for HTTPlug",
+            "homepage": "http://httplug.io",
+            "keywords": [
+                "http",
+                "httplug",
+                "logger",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/logger-plugin/issues",
+                "source": "https://github.com/php-http/logger-plugin/tree/1.3.0"
+            },
+            "time": "2022-02-11T13:20:17+00:00"
+        },
+        {
+            "name": "php-http/message",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/message.git",
+                "reference": "7886e647a30a966a1a8d1dad1845b71ca8678361"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/message/zipball/7886e647a30a966a1a8d1dad1845b71ca8678361",
+                "reference": "7886e647a30a966a1a8d1dad1845b71ca8678361",
+                "shasum": ""
+            },
+            "require": {
+                "clue/stream-filter": "^1.5",
+                "php": "^7.1 || ^8.0",
+                "php-http/message-factory": "^1.0.2",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "php-http/message-factory-implementation": "1.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.6",
+                "ext-zlib": "*",
+                "guzzlehttp/psr7": "^1.0",
+                "laminas/laminas-diactoros": "^2.0",
+                "phpspec/phpspec": "^5.1 || ^6.3 || ^7.1",
+                "slim/slim": "^3.0"
+            },
+            "suggest": {
+                "ext-zlib": "Used with compressor/decompressor streams",
+                "guzzlehttp/psr7": "Used with Guzzle PSR-7 Factories",
+                "laminas/laminas-diactoros": "Used with Diactoros Factories",
+                "slim/slim": "Used with Slim Framework PSR-7 implementation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/filters.php"
+                ],
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "HTTP Message related tools",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/message/issues",
+                "source": "https://github.com/php-http/message/tree/1.13.0"
+            },
+            "time": "2022-02-11T13:41:14+00:00"
+        },
+        {
+            "name": "php-http/message-factory",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/message-factory.git",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/message-factory/zipball/a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Factory interfaces for PSR-7 HTTP Message",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/message-factory/issues",
+                "source": "https://github.com/php-http/message-factory/tree/master"
+            },
+            "time": "2015-12-19T14:08:53+00:00"
+        },
+        {
+            "name": "php-http/promise",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/promise.git",
+                "reference": "4c4c1f9b7289a2ec57cde7f1e9762a5789506f88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/promise/zipball/4c4c1f9b7289a2ec57cde7f1e9762a5789506f88",
+                "reference": "4c4c1f9b7289a2ec57cde7f1e9762a5789506f88",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "friends-of-phpspec/phpspec-code-coverage": "^4.3.2",
+                "phpspec/phpspec": "^5.1.2 || ^6.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Promise\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joel Wurtz",
+                    "email": "joel.wurtz@gmail.com"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Promise used for asynchronous HTTP requests",
+            "homepage": "http://httplug.io",
+            "keywords": [
+                "promise"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/promise/issues",
+                "source": "https://github.com/php-http/promise/tree/1.1.0"
+            },
+            "time": "2020-07-07T09:29:14+00:00"
         },
         {
             "name": "phpgt/cssxpath",
@@ -20305,6 +22509,75 @@
                 }
             ],
             "time": "2022-10-12T07:05:45+00:00"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v5.4.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "54f14e36aa73cb8f7261d7686691fd4d75ea2690"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/54f14e36aa73cb8f7261d7686691fd4d75ea2690",
+                "reference": "54f14e36aa73cb8f7261d7686691fd4d75ea2690",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
+                "symfony/polyfill-php73": "~1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an improved replacement for the array_replace PHP function",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/options-resolver/tree/v5.4.11"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-07-20T13:00:38+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -25887,75 +28160,6 @@
                 }
             ],
             "time": "2022-10-07T08:01:20+00:00"
-        },
-        {
-            "name": "symfony/options-resolver",
-            "version": "v5.4.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "54f14e36aa73cb8f7261d7686691fd4d75ea2690"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/54f14e36aa73cb8f7261d7686691fd4d75ea2690",
-                "reference": "54f14e36aa73cb8f7261d7686691fd4d75ea2690",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/deprecation-contracts": "^2.1|^3",
-                "symfony/polyfill-php73": "~1.0",
-                "symfony/polyfill-php80": "^1.16"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides an improved replacement for the array_replace PHP function",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "config",
-                "configuration",
-                "options"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/options-resolver/tree/v5.4.11"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-07-20T13:00:38+00:00"
         },
         {
             "name": "symfony/stopwatch",
