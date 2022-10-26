@@ -1,0 +1,30 @@
+& when (@media-common = true) {
+    .filter-options {
+
+        .filter-options-title {
+            font-family: 'snes_italic', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 10px 40px 0 0;
+
+            &::after {
+                content: '+';
+                font-weight: 800;
+                color: white;
+                background: black;
+                width: 24px;
+                height: 20px;
+                text-align: center;
+                line-height: 12px;
+                transform: skew(-12deg);
+                font-size: 20px;
+            }
+        }
+
+        .filter-options-content {
+            a:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
