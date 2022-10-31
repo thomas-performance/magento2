@@ -27,6 +27,7 @@
             <container name="footer.social.container" htmlTag="div" htmlClass="footer-block" after="-">
                 <block name="footer.social" template="Tpuk_Theme::social.phtml" />
             </container>
+            <block name="footer.blocks.accordion.script" template="Tpuk_Theme::script.phtml" after="-"/>
         </referenceContainer>
         <referenceBlock name="footer_links" remove="true"/>
         <referenceContainer name="cms_footer_links_container" remove="true"/>
