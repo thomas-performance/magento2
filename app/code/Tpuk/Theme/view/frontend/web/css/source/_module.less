@@ -67,12 +67,19 @@ body {
         max-width: @layout__max-width;
         margin: 50px auto 0 auto;
         display: flex;
+        flex-wrap: wrap;
+
+        h2, p {
+            text-shadow: 0px 0px 8px #111;
+        }
 
         .tiles {
-            flex: 2 1 auto;
+            flex: 1 10 auto;
 
             &.left {
-                width: 560px;
+                width: 400px;
+                max-width: 100%;
+                flex: 1 0.5 auto;
             }
         }
     }
@@ -80,4 +87,14 @@ body {
 
 #featured-products {
     margin-top: 35px;
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    #pre-content #tiles-container {
+        flex-wrap: wrap;
+
+        .tiles {
+            width: 100%;
+        }
+    }
 }
