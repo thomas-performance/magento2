@@ -12,3 +12,8 @@ app/etc/*
 !composer.json
 !composer.lock
 !auth.json
+
+# For SEO identification files
+!pub
+pub/*
+!pub/google36fc361bd9d56cf6.html
