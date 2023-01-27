@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "282a472aef77b2f478f9efeb33992a3e",
+    "content-hash": "5329dbd5fd16294cbc98b7953ef87541",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -6192,6 +6192,104 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+            "name": "magenest/core",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magenest-dev/module-core.git",
+                "reference": "1035b52ba1c1931e76d410e25a53fe38d5a15cb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magenest-dev/module-core/zipball/1035b52ba1c1931e76d410e25a53fe38d5a15cb5",
+                "reference": "1035b52ba1c1931e76d410e25a53fe38d5a15cb5",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": ">=102.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magenest\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "Magenest Core",
+            "support": {
+                "issues": "https://github.com/magenest-dev/module-core/issues",
+                "source": "https://github.com/magenest-dev/module-core/tree/v1.3.1"
+            },
+            "time": "2022-10-04T10:14:09+00:00"
+        },
+        {
+            "name": "magenest/module-sage-pay-basic",
+            "version": "2.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/magenest/module-sage-pay-basic/magenest-module-sage-pay-basic-2.3.0.0.zip",
+                "shasum": "892a4ff39fb9fae63d82d7e812210fa544f91459"
+            },
+            "require": {
+                "magenest/core": ">=1.2.1",
+                "magenest/sagepay-lib": ">=1.2.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magenest\\SagePay\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "proprietary"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "magenest/sagepay-lib",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magenest-dev/sagepay-lib.git",
+                "reference": "3d47212c4a0d64f099f9dee85042d4dee3159239"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magenest-dev/sagepay-lib/zipball/3d47212c4a0d64f099f9dee85042d4dee3159239",
+                "reference": "3d47212c4a0d64f099f9dee85042d4dee3159239",
+                "shasum": ""
+            },
+            "type": "magento2-library",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magenest\\SagepayLib\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "SagePay library for Magenest extensions",
+            "support": {
+                "issues": "https://github.com/magenest-dev/sagepay-lib/issues",
+                "source": "https://github.com/magenest-dev/sagepay-lib/tree/1.2.0"
+            },
+            "time": "2022-06-24T07:00:39+00:00"
+        },
+        {
             "name": "magento/adobe-ims",
             "version": "2.1.3",
             "dist": {
@@ -6327,13 +6425,6 @@
                 "url": "https://mage-os.hypernode.com/mirror/packages/magento/framework-103.0.4.zip",
                 "shasum": "71603c0c3c0650d3bb2e3f9ab66c294397e7fb2a"
             },
-            "archive": {
-                "exclude": [
-                    "Amqp",
-                    "Bulk",
-                    "MessageQueue"
-                ]
-            },
             "require": {
                 "colinmollenhour/php-redis-session-abstract": "~1.4.5",
                 "composer/composer": "^1.9 || ^2.0",
@@ -6380,6 +6471,13 @@
                 "psr-4": {
                     "Magento\\Framework\\": ""
                 }
+            },
+            "archive": {
+                "exclude": [
+                    "Amqp",
+                    "Bulk",
+                    "MessageQueue"
+                ]
             },
             "license": [
                 "OSL-3.0",
@@ -28398,5 +28496,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
