@@ -341,6 +341,8 @@ return [
         'Klarna_Onsitemessaging' => 1,
         'Klarna_Orderlines' => 1,
         'Klarna_Support' => 1,
+        'Magenest_Core' => 1,
+        'Magenest_SagePay' => 1,
         'Magezon_Core' => 1,
         'Magezon_Builder' => 1,
         'Magezon_NinjaMenus' => 1,
@@ -356,6 +358,7 @@ return [
         'PostDirekt_Autocomplete' => 1,
         'PostDirekt_Core' => 1,
         'Temando_ShippingRemover' => 1,
+        'Tpuk_OneTimeImport' => 1,
         'Tpuk_Theme' => 1
     ],
     'system' => [
