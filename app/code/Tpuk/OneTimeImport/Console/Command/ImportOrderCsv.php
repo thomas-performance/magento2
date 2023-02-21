@@ -75,11 +75,11 @@ class ImportOrderCsv extends Command
     const STATE_MAP = [
         'Complete' => Order::STATE_COMPLETE,
         'Shipped' => Order::STATE_PROCESSING,
-        'Reversed' => 0,
+        'Reversed' => Order::STATE_CANCELED,
         'Refunded' => Order::STATE_CLOSED,
         'Canceled' => Order::STATE_CANCELED,
         'Processing' => Order::STATE_PROCESSING,
-        'Pending' => Order::STATE_
+        'Pending' => Order::STATE_PENDING_PAYMENT
     ];
 
     const COLUMNS = [
@@ -265,7 +265,7 @@ class ImportOrderCsv extends Command
                 } else {
                     $order->setCustomerIsGuest(1);
                 }
-                
+
                 $payment = $this->orderPaymentFactory->create();
                 $payment->setMethod($row[self::COLUMNS['payment_method']]);
                 $order->setPayment($payment);
