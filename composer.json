@@ -19,6 +19,7 @@
   "require": {
     "dhl/shipping-m2": "^2.7",
     "klarna/m2-klarna": "^1.1",
+    "magenest/module-sage-pay-basic": "^2.3",
     "magento/composer-dependency-version-audit-plugin": "~0.1",
     "magento/composer-root-update-plugin": "~2.0",
     "magento/module-page-builder": "2.2.2",
