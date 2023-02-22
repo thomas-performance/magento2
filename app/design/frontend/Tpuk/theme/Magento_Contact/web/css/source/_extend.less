@@ -1,0 +1,25 @@
+//.contact-index-index.page-layout-2columns-left
+
+& when (@media-common = true) {
+    .contact-index-index {
+        &.page-layout-2columns-left {
+            .column.main,
+            .sidebar-additional {
+                width: 50%;
+                padding: 65px;
+
+                .form.contact {
+                    min-width: none;
+                    width: 100%;
+                }
+            }
+        }
+
+        // todo double check this
+        .page-wrapper {
+            background-image: url('@{baseDir}Magento_Contact/images/contact-page-bg.png');
+            background-size: contain;
+            background-repeat: repeat-y;
+        }
+    }
+}

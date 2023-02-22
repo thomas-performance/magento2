@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="page.wrapper">
+        <container name="contact.full.width.ctas" htmlTag="div" htmlId="ctas" after="main.content">
+            <block class="Magento\Cms\Block\Block" name="full.width.ctas.block">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">cta-columns</argument>
+                </arguments>
+            </block>
+        </container>
+    </referenceContainer>
+    <referenceContainer name="div.sidebar.additional">
+        <block class="Magento\Cms\Block\Block" name="contact.us.content" before="-">
+            <arguments>
+                <argument name="block_id" xsi:type="string">contact-us-content</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+</page>
