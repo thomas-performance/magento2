@@ -1,0 +1,62 @@
+//.contact-index-index.page-layout-2columns-left
+
+& when (@media-common = true) {
+    .contact-index-index {
+        &.page-layout-2columns-left {
+            .column.main,
+            .sidebar-additional {
+                width: 50%;
+                padding: 65px;
+
+                .form.contact {
+                    min-width: 0;
+                    width: 100%;
+                }
+            }
+
+            .column.main {
+                .form.contact {
+                    fieldset {
+                        margin: 0;
+                    }
+
+                    .field {
+                        margin: 0 0 30px;
+
+                        input {
+                            height: 67px !important;
+                        }
+
+                        input, textarea {
+                            font-size: 24px;
+                            border: 1px solid #e5e5e5;
+                            font-family: 'snes_italic','Open Sans',serif;
+
+                            &::placeholder {
+                                color: #333;
+                            }
+                        }
+
+                        textarea {
+                            height: 173px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // todo double check this
+        .page-wrapper {
+            background-image: url('@{baseDir}Magento_Contact/images/contact-page-bg.png');
+            background-size: contain;
+            background-repeat: repeat-y;
+        }
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .contact-index-index {
+        .page-wrapper {
+            background-image: none;
+        }
+    }
+}
