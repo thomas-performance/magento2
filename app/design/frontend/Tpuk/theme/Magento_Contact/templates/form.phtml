@@ -21,22 +21,23 @@ $viewModel = $block->getViewModel();
       data-mage-init='{"validation":{}}'>
     <fieldset class="fieldset">
         <div class="field name required">
-            <label class="label" for="name"><span><?= $block->escapeHtml(__('Name')) ?></span></label>
             <div class="control">
                 <input name="name"
                        id="name"
+                       placeholder="<?= $block->escapeHtml(__('Name')) ?>"
                        title="<?= $block->escapeHtmlAttr(__('Name')) ?>"
                        value="<?= $block->escapeHtmlAttr($viewModel->getUserName()) ?>"
                        class="input-text"
                        type="text"
-                       data-validate="{required:true}"/>
+                       data-validate="{required:true}"
+                />
             </div>
         </div>
         <div class="field email required">
-            <label class="label" for="email"><span><?= $block->escapeHtml(__('Email')) ?></span></label>
             <div class="control">
                 <input name="email"
                        id="email"
+                       placeholder="<?= $block->escapeHtml(__('Email')) ?>"
                        title="<?= $block->escapeHtmlAttr(__('Email')) ?>"
                        value="<?= $block->escapeHtmlAttr($viewModel->getUserEmail()) ?>"
                        class="input-text"
@@ -47,10 +48,10 @@ $viewModel = $block->getViewModel();
             </div>
         </div>
         <div class="field telephone">
-            <label class="label" for="telephone"><span><?= $block->escapeHtml(__('Phone Number')) ?></span></label>
             <div class="control">
                 <input name="telephone"
                        id="telephone"
+                       placeholder="<?= $block->escapeHtml(__('Phone Number')) ?>"
                        title="<?= $block->escapeHtmlAttr(__('Phone Number')) ?>"
                        value="<?= $block->escapeHtmlAttr($viewModel->getUserTelephone()) ?>"
                        class="input-text"
@@ -58,12 +59,10 @@ $viewModel = $block->getViewModel();
             </div>
         </div>
         <div class="field comment required">
-            <label class="label" for="comment">
-                <span><?= $block->escapeHtml(__('What’s on your mind?')) ?></span>
-            </label>
             <div class="control">
                 <textarea name="comment"
                           id="comment"
+                          placeholder="<?= $block->escapeHtml(__('What’s on your mind?')) ?>"
                           title="<?= $block->escapeHtmlAttr(__('What’s on your mind?')) ?>"
                           class="input-text"
                           cols="5"
