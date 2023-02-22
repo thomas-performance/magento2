@@ -9,7 +9,7 @@
                 padding: 65px;
 
                 .form.contact {
-                    min-width: none;
+                    min-width: 0;
                     width: 100%;
                 }
             }
@@ -20,6 +20,13 @@
             background-image: url('@{baseDir}Magento_Contact/images/contact-page-bg.png');
             background-size: contain;
             background-repeat: repeat-y;
+        }
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .contact-index-index {
+        .page-wrapper {
+            background-image: none;
         }
     }
 }
