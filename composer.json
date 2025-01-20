@@ -64,6 +64,15 @@
   "conflict": {
     "gene/bluefoot": "*"
   },
+  "replace": {
+    "magento/language-zh_hans_cn": "*",
+    "magento/language-pt_br": "*",
+    "magento/language-nl_nl": "*",
+    "magento/language-fr_fr": "*",
+    "magento/language-es_es": "*",
+    "magento/language-en_us": "*",
+    "magento/language-de_de": "*"
+  },
   "autoload-dev": {
     "psr-4": {
       "Magento\\PhpStan\\": "dev/tests/static/framework/Magento/PhpStan/",
