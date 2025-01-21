@@ -12,6 +12,7 @@ app/etc/*
 !composer.json
 !composer.lock
 !auth.json
+!readme.md
 
 # For SEO identification files
 !pub
