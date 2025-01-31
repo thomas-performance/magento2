@@ -1,0 +1,13 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Tpuk\Theme\ViewModel\FooterCmsViewModel $viewModel
+ */
+$viewModel = $block->getViewModel();
+$id = $block->getBlockId();
+?>
+
+<h2><?= $block->escapeHtml($viewModel->getTitle($id)) ?></h2>
+<div class="content">
+    <?= $viewModel->getContent($id) ?>
+</div>

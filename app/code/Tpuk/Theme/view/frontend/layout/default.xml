@@ -4,22 +4,25 @@
     <body>
         <referenceContainer name="footer">
             <container name="footer.about.us.container" htmlTag="div" htmlClass="footer-block" before="-">
-                <block class="Magento\Cms\Block\Block" name="footer.about.us">
+                <block name="footer.about.us" template="Tpuk_Theme::footer.phtml">
                     <arguments>
+                        <argument name="view_model" xsi:type="object">Tpuk\Theme\ViewModel\FooterCmsViewModel</argument>
                         <argument name="block_id" xsi:type="string">about-us</argument>
                     </arguments>
                 </block>
             </container>
             <container name="footer.legal.info.container" htmlTag="div" htmlClass="footer-block" after="footer.about.us.container">
-                <block class="Magento\Cms\Block\Block" name="footer.legal.info">
+                <block name="footer.legal.info" template="Tpuk_Theme::footer.phtml">
                     <arguments>
+                        <argument name="view_model" xsi:type="object">Tpuk\Theme\ViewModel\FooterCmsViewModel</argument>
                         <argument name="block_id" xsi:type="string">legal-information</argument>
                     </arguments>
                 </block>
             </container>
             <container name="footer.contact.us.container" htmlTag="div" htmlClass="footer-block" after="footer.legal.info.container">
-                <block class="Magento\Cms\Block\Block" name="footer.contact.us">
+                <block name="footer.contact.us" template="Tpuk_Theme::footer.phtml">
                     <arguments>
+                        <argument name="view_model" xsi:type="object">Tpuk\Theme\ViewModel\FooterCmsViewModel</argument>
                         <argument name="block_id" xsi:type="string">contact-us</argument>
                     </arguments>
                 </block>

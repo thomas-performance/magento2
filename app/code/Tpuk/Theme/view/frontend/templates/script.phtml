@@ -2,11 +2,49 @@
     require([
         'jquery',
         'accordion',
-        'domReady!'
+        'collapsible'
     ], function ($) {
-        $(".footer-block").accordion({
-            header: 'h2',
-            content: 'p'
-        });
+        const mobileWidth = 768;
+
+        if (window.innerWidth <= mobileWidth) {
+            const opts = {
+                active: false,
+                collapsible: true,
+                disabled: false,
+                header: 'h2',
+                content: '.content'
+            };
+
+            $(".footer-block").each((key, item) => {
+                $(item).collapsible(opts);
+            });
+        }
+
+        window.addEventListener('resize', (e) => {
+            if (window.innerWidth <= mobileWidth) {
+                $(".footer-block").each((key, item) => {
+                    $(item).collapsible({
+                        active: false,
+                        collapsible: true,
+                        disabled: false,
+                        header: 'h2',
+                        content: '.content'
+                    });
+
+                    $(item).collapsible('deactivate');
+                });
+            } else {
+                $(".footer-block").each((key, item) => {
+                    $(item).collapsible({
+                        active: true,
+                        collapsible: false,
+                        header: 'h2',
+                        content: '.content'
+                    });
+
+                    $(item).collapsible('activate');
+                });
+            }
+        })
     });
 </script>

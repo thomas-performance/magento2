@@ -18,3 +18,6 @@ app/etc/*
 !pub
 pub/*
 !pub/google36fc361bd9d56cf6.html
+
+# Ignore this committed file - server config requires "FollowSymLinks" to be commented out
+pub/.htaccess
